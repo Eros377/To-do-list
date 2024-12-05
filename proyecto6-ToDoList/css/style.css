@@ -1,0 +1,108 @@
+:root {
+    --fontSecundario: Arial, Helvetica, sans-serif;
+    --fontPrincipal: "Atomic Age", system-ui;
+    --colorPrincipal: #333;
+    --colorSecundario: #8c52ff;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-weight: 400;
+    font-style: normal;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background: url(../img/background/background.webp) no-repeat center center fixed;
+    background-position-Y: -30rem;
+    font-family: var(--fontSecundario);
+}
+.vidrio{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(2rem);  
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.1rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;     
+}
+.contenedor {
+    padding: 2rem;
+    margin-top:5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.contenedor__h1{
+    margin-bottom: 20px;
+    font-family:var(--fontPrincipal);
+    font-size:4rem;
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content:center;
+}
+
+.formulario__input{
+    padding: 1rem;
+    background-color:transparent;
+    border: 0.2rem solid var(--colorPrincipal);
+    border-radius: 0.5rem 0 0 0.5rem;
+    outline: none;
+}
+.formulario__input::placeholder{
+    color:black;
+    font-family:var(--fontSecundario);
+}
+
+.formulario__button{
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.formulario__button:hover {
+    background: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding:1rem;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size:2rem;
+    color:var(--blanco);
+    background: var(--colorPrincipal);
+    border-radius: 0.5rem;
+}
+
+ul li button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #ff4444;
+    color: var(--blanco);
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+li button:hover {
+    background: #cc0000;
+}
